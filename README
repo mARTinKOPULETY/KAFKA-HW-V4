@@ -1,0 +1,26 @@
+Application "KAFKA-HW-V4" contains two modules:
+
+Wikimedia-Producer - Accepts streams from Wikimedia by Kafka, its called by REST endpoint
+Wikimedia-Consumer - Consumes data from producer. Filter data by country of origin, then send List of data by REST endpoint
+
+
+
+
+
+
+KAFKA
+==============================================================================
+Erase all data from from Kafka\...\data\kafka and ...\data\zookeeper directory
+
+CMD:
+Zookeeper:
+zookeeper-server-start  C:\Kafka\kafka_2.13-3.3.1\config\zookeeper.properties
+
+Kafka:
+kafka-server-start C:\Kafka\kafka_2.13-3.3.1\config\server.properties
+
+
+
+HTTP:
+==============================================================================
+http://localhost:8009/api/v1/producer/suckin
