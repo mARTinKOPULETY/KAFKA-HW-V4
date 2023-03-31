@@ -1,7 +1,7 @@
 Application "KAFKA-HW-V4" contains two modules:
 
 Wikimedia-Producer - Accepts streams from Wikimedia by Kafka, its called by REST endpoint
-Wikimedia-Consumer - Consumes data from producer. Filter data by country of origin, then send List of data by REST endpoint
+Wikimedia-Consumer - Consumes data from producer. Filter data by country of origin, then send List of data by REST endpoint when it is called by external app.
 
 
 
